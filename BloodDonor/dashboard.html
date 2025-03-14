@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Blood Donor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            Blood Donor
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="donate.html">Donate</a>
+            <a href="request.html">Request</a>
+            <a href="database.html">Database</a>
+            <a href="contact.html">Contact</a>
+            <div class="user-menu">
+                <span class="user-name"></span>
+                <button onclick="logout()" class="btn-secondary">Logout</button>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h1>Welcome, <span class="user-name"></span>!</h1>
+                <p>Here's your blood donation dashboard</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Donation Stats -->
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Donation History</h3>
+                        <p class="stat-number">0</p>
+                        <p>Total Donations</p>
+                    </div>
+                </div>
+
+                <!-- Upcoming Donations -->
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Next Donation</h3>
+                        <p class="stat-number">Not Scheduled</p>
+                        <p>Schedule your next donation</p>
+                    </div>
+                </div>
+
+                <!-- Blood Type -->
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Blood Type</h3>
+                        <p class="stat-number">-</p>
+                        <p>Update your blood type</p>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lives Impacted</h3>
+                        <p class="stat-number">0</p>
+                        <p>People helped through your donations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="dashboard-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Account Created</h4>
+                            <p>Welcome to Blood Donor!</p>
+                        </div>
+                        <div class="activity-time">
+                            Just now
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="dashboard-section">
+                <h2>Quick Actions</h2>
+                <div class="quick-actions">
+                    <a href="donate.html" class="action-card">
+                        <i class="fas fa-tint"></i>
+                        <span>Schedule Donation</span>
+                    </a>
+                    <a href="profile.html" class="action-card">
+                        <i class="fas fa-user-edit"></i>
+                        <span>Update Profile</span>
+                    </a>
+                    <a href="request.html" class="action-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Request Blood</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Blood Donor</h3>
+                <p>Connecting donors with those in need. Together, we can save lives.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="donate.html">Donate Blood</a></li>
+                    <li><a href="request.html">Request Blood</a></li>
+                    <li><a href="database.html">Blood Database</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 Blood Donor. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
